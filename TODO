@@ -1,0 +1,2 @@
+
+- Add support for sending e-mail to BCC recipients in the background.  Right now, it must be done immediately because the BCC list isn't included in the encoded e-mail
