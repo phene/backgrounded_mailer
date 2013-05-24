@@ -7,14 +7,11 @@ module BackgroundedMailer
       alias_method :deliver_now, :deliver
       alias_method :deliver, :deliver_later
       extend ClassMethods
-      class << self
-        backgrounded :deserialize_and_deliver
-      end
     end
   end
   
   def deliver_later
-    self.class.deserialize_and_deliver_backgrounded self.encoded, self.delivery_handler.name
+    self.class.backgrounded.deserialize_and_deliver self.encoded, self.delivery_handler.name
     self
   end
   
