@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "backgrounded_mailer"
 
-  s.add_runtime_dependency(%q<backgrounded>, [">= 0.7"])
+  s.add_runtime_dependency(%q<backgrounded>, [">= 2.0"])
   s.add_runtime_dependency(%q<mail>, [">= 2.2"])
   s.add_development_dependency(%q<shoulda>, [">= 0"])
   s.add_development_dependency(%q<mocha>, [">= 0"])
